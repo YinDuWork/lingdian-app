@@ -1,0 +1,343 @@
+
+uni-page, page {
+	height: 100%;
+	font-size: 30upx;
+}
+uni-page-body {
+	height: 100%;
+}
+.uni-list-item__content-title, .uni-list-item__extra-text {
+	font-size: 30upx !important;
+}
+.file-title {
+	font-size: 30upx !important;
+}
+.c_999 {
+	color: #999999;
+}
+/*flex布局*/
+.flex {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.flex-row {
+	@extend .flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.flex-column {
+	@extend .flex;
+	flex-direction: column;
+}
+.flex_wrap{
+    flex-wrap: wrap;
+}
+.inline_flex{
+    display: inline-flex;
+}
+.flex_center{
+    align-items: center;
+    -webkit-align-items: center;
+}
+.flex_end{
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+.justify_between{
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+}
+.justify_around{
+    justify-content:space-around;
+    -webkit-justify-content:space-around;
+}
+.justify_start{
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+.justify_end{
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+.justify_center{
+    justify-content:center;
+    -webkit-justify-content:center;
+}
+.flex_grow{
+    flex-grow: 1;
+}
+.flex_shrink{
+    flex-shrink: 0;
+}
+.flex1{
+	-webkit-flex: 1;
+    flex: 1;
+}
+.flex2{
+	-webkit-flex: 2;
+    flex: 2;
+}
+.flex_row{
+    flex-direction: row;
+}
+.flex_column{
+    flex-direction: column;
+}
+.mt10 {
+	margin-top: 20upx;
+}
+.mr10 {
+	margin-right: 20upx;
+}
+.mr20 {
+	margin-right: 40upx;
+}
+/* 表单默认样式 */
+.form-box {
+	border-top: 20upx solid #F7F7F7;
+	padding: 0 10px;
+	background-color: #FFFFFF;
+}
+.form-item {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-height: 96upx;
+	font-size: 15px;
+	text-align: left;
+	background-color: #fff;
+	border-bottom: 1px solid #E4E6EC;
+	&:last-of-type {
+		border-bottom-width: 0;
+	}
+	&.checkbox {
+		display: block;
+		height: auto;
+		.form-item-label {
+			line-height: 96upx;
+		}
+		.form-item-con {
+			text-align: left;
+		}
+	}
+	&.required::after {
+		content: "*";
+		position: absolute;
+		left: 0;
+		top: 32upx;
+		color: $uni-color-error;
+	}
+}
+.form-item-con {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	text-align: right;
+}
+.form-item-con .picker-con {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end
+}
+.form-item-con .picker-text {
+	display: block;
+	width: 100%;
+}
+.form-item-con .right-icon {
+	margin-left: 8px;
+	color: #8D929B !important;
+}
+.form-item-label {
+	color: #999999;
+	-ms-flex-preferred-size: auto!important;
+	flex-basis: auto!important;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin-right: 30upx;
+	padding-left: 16upx;
+}
+.form-item input {
+	border: 0 !important;
+}
+uni-input, uni-textarea {
+	font-size: 30upx;
+}
+input::-webkit-input-placeholder{
+    color:#999;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#999;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#999;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#999;
+}
+input[disabled],input:disabled,input.disabled{
+    opacity: 1;
+    -webkit-text-fill-color: #171e2a;
+}
+textarea {
+	padding: 20upx 0;
+}
+.form-item .uni-dialog-input {
+	border: 1px #eee solid !important;
+}
+/* 按钮通用样式 */
+.uni-button-color {
+    color: $color !important;
+}
+button:after {
+	border: 0;
+}
+button {
+	display: inline-block;
+	height: 80upx;
+	font-size: 32upx;
+	line-height: 80upx;
+    border-radius: 40upx;
+}
+button[type=primary] {
+    border: 0;
+    background: $color;
+}
+button[type=primary].button-hover {
+	color: #FFFFFF;
+	background-color: $hovercolor;
+}
+button[type=default] {
+	color: $color;
+	background: #FFF3F2;
+}
+button[type=default].button-hover {
+	color: $color;
+	background-color: #FFF3F2;
+}
+button[warn] {
+	color: $color;
+	border-color: $color;
+}
+button[type="warn"][plain] {
+	color: $color;
+	border-color: $color;
+}
+button[disabled][type=primary] {
+	color: #fff;
+	background-color: #c9c9c9;
+}
+button[size=mini] {
+	height: 60upx;
+	padding: 0 28upx;
+}
+.big-btn {
+	display: block;
+    width: 100%;
+}
+.btn-group {
+	margin-top: 20px;
+	text-align: center;
+}
+.btn-group button {
+	min-width: 200upx;
+	margin-right: 20upx;
+}
+.btn-group button:last-of-type {
+	margin-right: 0;
+}
+.common-btn {
+	display: block;
+	width: 300upx;
+	margin: 60upx auto;
+}
+.fixed-btns {
+	@extend .flex;
+	@extend .flex_center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 110upx;
+	padding: 10upx 20upx;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 6px #ccc;
+}
+.clearfix::after,
+.clearfix::before {
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.valid-code {
+	display: block;
+	min-width: 100px;
+	padding-left: 10px;
+	text-align: center;
+	border-left: 1px solid #e8e8e8;
+}
+.code-input /deep/ .form-item-con {
+	width: calc(100% - 200px) !important;
+}
+/* 一行溢出显示省略号 */
+.ellipsis {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+/* 两行溢出显示省略号 */
+.ellipsis_clip {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* 3行溢出显示省略号 */
+.ellipsis_clip3 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.icon-prefix {
+	margin-right: 6upx;
+}
+.check-item {
+	display: inline-block;
+	height: 60upx;
+	margin-right: 20upx;
+	margin-bottom: 20upx;
+	padding: 0 20upx;
+	line-height: 60upx;
+	background-color: $bg_color;
+	border-radius: 4px;
+	&.selected {
+		color: #FFFFFF;
+		background-color: $color;
+	}
+}

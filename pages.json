@@ -1,0 +1,182 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页
+		{
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "登录"
+            }
+        },
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle":"custom"
+				// "app-plus": {
+				// 	"titleNView": {
+				// 		"type": "transparent",
+				// 		"titleColor": "#fff",
+				// 		"backgroundColor": "#fff",
+				// 		"searchInput": {
+				// 			"backgroundColor": "rgba(246, 246, 246, 0.8)",
+				// 			"borderRadius": "20px",
+				// 			"placeholder": "请输入模特信息",
+				// 			"disabled": true
+				// 		}
+				// 	}
+				// }
+			}
+		},
+		{
+            "path": "pages/model/modelList",
+            "style": {
+                "navigationBarTitleText": "资源库",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+        },
+		{
+            "path": "pages/message/message",
+            "style": {
+                "navigationBarTitleText": "消息",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+            "path": "pages/my/my",
+            "style": {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+            "path": "pages/model/modelPublic/modelPublic",
+            "style": {
+                "navigationBarTitleText": "模特发布"
+            }
+        },
+		{
+            "path": "pages/my/myModel/myModel",
+            "style": {
+                "navigationBarTitleText": "我的资源",
+                "enablePullDownRefresh": false
+            } 
+        },
+		{
+            "path": "pages/my/myCollection/myCollection",
+            "style": {
+                "navigationBarTitleText": "我的收藏",
+                "enablePullDownRefresh": false
+            } 
+        },
+		{
+            "path": "pages/my/personInfo/personInfo",
+            "style": {
+                "navigationBarTitleText": "个人信息"
+            } 
+        },
+		{
+            "path" : "pages/model/modelDetail/modelDetail",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"navigationBarBackgroundColor":"#f1f1f1",
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none"
+				}
+			}
+        },
+		{
+            "path": "pages/model/commentList/commentList",
+            "style": {
+                "navigationBarTitleText": "全部评论",
+                "enablePullDownRefresh": false,
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [{
+                                "text": "发布",
+                                "fontSize": "15px",
+                                "color": "#C18F4E",
+                                "float": "right"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "path": "pages/my/personInfo/personImg",
+            "style": {
+                "navigationBarTitleText": "设置头像",
+                "app-plus": {
+                    "titleNView": {
+                        "buttons": [{
+                                "text": "\ue639",
+                                "fontSrc": "/static/fonts/iconfont.ttf",
+                                "fontSize": "22px",
+                                "float": "right"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+        ,{
+            "path" : "pages/message/messageDetail/messageDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消息详情"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "灵点",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"color": "#8F8F94",
+		"selectedColor": "#C18F4E", // bf984b
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/home.png",
+				"selectedIconPath": "static/img/home_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/model/modelList",
+				"iconPath": "static/img/model.png",
+				"selectedIconPath": "static/img/model_active.png",
+				"text": "资源库"
+			},
+			// {
+			// 	"pagePath": "pages/model/modelPublic",
+			// 	"iconPath": "static/img/tab_add.png",
+			// 	"selectedIconPath": "static/img/tab_add.png"
+			// },
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/img/message.png",
+				"selectedIconPath": "static/img/message_active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/img/my.png",
+				"selectedIconPath": "static/img/my_active.png",
+				"text": "我的"
+			}
+		],
+		"midButton": {
+			"height": "66px",
+			"width": "66px",
+			"iconPath": "static/img/tab_add.png",
+			"iconWidth": "46px"
+		}
+	}
+}

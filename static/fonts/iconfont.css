@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2648722 */
+  src: url('~@/static/fonts/iconfont.eot?t=1626606898377'); /* IE9 */
+  src: url('~@/static/fonts/iconfont.eot?t=1626606898377#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~@/static/fonts/iconfont.woff?t=1626606898377') format('woff'),
+       url('~@/static/fonts/iconfont.ttf?t=1626606898377') format('truetype'),
+       url('~@/static/fonts/iconfont.svg?t=1626606898377#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-more:before {
+  content: "\e639";
+}
+
+.icon-edit:before {
+  content: "\e61f";
+}
+
+.icon-comment:before {
+  content: "\e60c";
+}
+
+.icon-shipin:before {
+  content: "\e85f";
+}
+
+.icon-tupian:before {
+  content: "\e860";
+}
+
+.icon-screen:before {
+  content: "\e609";
+}
+
+.icon-search:before {
+  content: "\e688";
+}
+
+.icon-phone:before {
+  content: "\e613";
+}
+
+.icon-pwd:before {
+  content: "\e614";
+}
+
+.icon-collect-filled:before {
+  content: "\e62c";
+}
+
+.icon-collect:before {
+  content: "\e62e";
+}
+
+.icon-share:before {
+  content: "\e632";
+}
+
+.icon-women:before {
+  content: "\e644";
+}
+
+.icon-men:before {
+  content: "\e643";
+}
+
+.icon-publish:before {
+  content: "\e66d";
+}
+
+.icon-card-list:before {
+  content: "\e814";
+}
+
+.icon-card:before {
+  content: "\e815";
+}
+
